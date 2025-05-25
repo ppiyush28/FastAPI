@@ -49,6 +49,7 @@ def sort_data(sort_by :str = Query(..., description="sort on basis of height,wei
     return sort_data
 
 
+#put, update,delete
 
 # if __name__ == "__main__":
 #     uvicorn.run(app=app)
