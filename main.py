@@ -3,6 +3,7 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field, computed_field
 from typing import Annotated, Literal, Optional
 import json
+import uvicorn
 
 app = FastAPI()
 
@@ -160,6 +161,9 @@ def delete_patient(patient_id: str):
 
     return JSONResponse(status_code=200, content={'message':'patient deleted'})
 
+
+# if __name__ == "__main__":
+#     uvicorn.run(app=app)
 
 
 
